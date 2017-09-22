@@ -6,7 +6,7 @@ import { WelcomeComponent } from "app/home/welcome/welcome.component";
 @NgModule({
   imports: [
     CommonModule,
-    HomeRoutingModule
+    HomeRoutingModule,
     
   ],
   declarations: [
