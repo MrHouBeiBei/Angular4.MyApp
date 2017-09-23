@@ -9,6 +9,7 @@ export class AppComponent {
   title = 'app';
 
   ngOnInit(){
+    console.log("app")
     
   }
 }
