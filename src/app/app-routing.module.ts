@@ -1,6 +1,7 @@
 import { NgModule }             from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { TestComponent } from './containers/test/test.component';
+import { MenuComponent } from "app/common/menu/menu.component";
 
 export const routes: Routes = [
 //   { path: '', redirectTo: 'contact', pathMatch: 'full'},
@@ -10,7 +11,11 @@ export const routes: Routes = [
   { path: 'test',
   component:TestComponent ,
   data:{title:'测试'} 
-  }
+  },
+  { path: 'menu',
+  component: MenuComponent,
+  data:{title:'测试'} 
+  },
 
 //   { path: 'crisis', loadChildren: 'app/crisis/crisis.module#CrisisModule' },
 //   { path: 'heroes', loadChildren: 'app/hero/hero.module#HeroModule' }

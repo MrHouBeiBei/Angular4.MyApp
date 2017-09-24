@@ -17,5 +17,22 @@
     <h2><a target="_blank" href="http://angularjs.blogspot.ca/">Angular blog</a></h2>
   </li>
 </ul> -->
-<h1>app</h1>
+<h2>app</h2>
+
+<nz-layout>
+    <nz-header>
+      1
+    </nz-header>
+    <nz-sider [nzCollapsible]="true" [nzWidth]="200" [nzCollapsedWidth]="64">
+      2
+      <!-- <app-menu></app-menu> -->
+    </nz-sider><br>
+    <nz-content>
+      3
+    </nz-content>
+    <nz-footer>
+      4
+    </nz-footer>
+</nz-layout>
+
 <router-outlet></router-outlet>

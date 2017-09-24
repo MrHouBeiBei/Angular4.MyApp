@@ -8,12 +8,14 @@ import { NgZorroAntdModule } from 'ng-zorro-antd';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from "app/app-routing.module";
 import { TestComponent } from './containers/test/test.component';
+import { MenuComponent } from './common/menu/menu.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     TestComponent,
+    MenuComponent,
   ],
   imports: [
     BrowserModule,
