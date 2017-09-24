@@ -5,7 +5,7 @@ import { TestComponent } from './containers/test/test.component';
 export const routes: Routes = [
 //   { path: '', redirectTo: 'contact', pathMatch: 'full'},
   { path: '', redirectTo: '', pathMatch: 'full'},
-  // { path: 'home', loadChildren: 'app/home/home.module#HomeModule' },
+  { path: 'home', loadChildren: 'app/home/home.module#HomeModule' },
 
   { path: 'test',
   component:TestComponent ,
