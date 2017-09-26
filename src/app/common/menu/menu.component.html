@@ -1,7 +1,39 @@
 <!-- <p>
   menu works!
 </p> -->
-<ul nz-menu [nzMode]="'vertical'" [nzTheme]="'light'">
-    666
+<!-- <ul nz-menu [nzMode]="'vertical'" [nzTheme]="'dark'">
+    <li nz-submenu [nzOpen]="true">
+        <span title><i class="anticon anticon-user">test</i></span>
+        <ul>
+            <li nz-menu-item>test</li>
+        </ul>
+    </li>
+    <li nz-submenu [nzOpen]="true">
+        <span title>test2</span>
+        <ul>
+            <li nz-menu-item>test2</li>
+        </ul>
+    </li>
 </ul>
+ -->
 
+
+ <ul nz-menu [nzTheme]="'dark'" [nzMode]="isCollapsed?'vertical':'inline'">
+    <li nz-submenu>
+      <span title><i class="anticon anticon-user"></i><span class="nav-text">User</span></span>
+      <ul>
+        <li nz-menu-item>Tom</li>
+        <li nz-menu-item>Bill</li>
+        <li nz-menu-item>Alex</li>
+      </ul>
+    </li>
+    <li nz-submenu>
+      <span title><i class="anticon anticon-team"></i><span class="nav-text">Team</span></span>
+      <ul>
+        <li nz-menu-item>Team 1</li>
+        <li nz-menu-item>Team 2</li>
+      </ul>
+    </li>
+    <!-- <li nz-menu-item><span><i class="anticon anticon-file"></i><span class="nav-text">File</span></span>
+    </li> -->
+  </ul>
