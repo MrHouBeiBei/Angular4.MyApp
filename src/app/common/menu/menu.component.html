@@ -37,3 +37,13 @@
     <!-- <li nz-menu-item><span><i class="anticon anticon-file"></i><span class="nav-text">File</span></span>
     </li> -->
   </ul>
+
+  <ul nz-menu [nzMode]="isCollapsed?'vertical':'inline'" [nzTheme]="'light'">
+    <li nz-submenu [nzOpen]="true">
+        <span title>start</span>
+        <ul>
+          <li nz-menu-item [routerLink]="['./test']">first</li>  
+          <li nz-menu-item>second</li>  
+        </ul>
+    </li>
+  </ul>
