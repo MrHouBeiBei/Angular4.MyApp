@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Test } from 'app/model/test';
 
 @Component({
   selector: 'app-test',
@@ -9,11 +10,27 @@ export class TestComponent implements OnInit {
 
   a: Number = 5;
 
-  constructor() { }
+  testModel: Test
+  // testModel: Test = new Test('女');
+
+  constructor(
+  ) { 
+    this.testModel = new Test('女')
+    console.log(this.test())  //4
+
+  }
 
   ngOnInit() {
 
-    console.log('test')
+    console.log(this.testModel)
+    console.log(Test.prototype.constructor)
+    console.log(Test==Test.prototype.constructor)
+    console.log(this.testModel.count)
+    console.log(this.testModel.count())
+    console.log(this.testModel.add())
   }
 
+  test():number{
+    return 2+2;
+  }
 }
