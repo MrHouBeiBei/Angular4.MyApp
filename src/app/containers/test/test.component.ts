@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TestComponent implements OnInit {
 
-  a: Number = 5;
+  a: Number = 5.6;
 
   constructor() { }
 

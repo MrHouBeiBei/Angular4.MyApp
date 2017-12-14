@@ -18,7 +18,40 @@
  -->
 
 
- <ul nz-menu [nzTheme]="'dark'" [nzMode]="isCollapsed?'vertical':'inline'">
+ <!-- <ul nz-menu [nzTheme]="'dark'" [nzMode]="isCollapsed?'vertical':'inline'">
+    <li nz-submenu>
+      <span title><i class="anticon anticon-user"></i><span class="nav-text">User</span></span>
+      <ul>
+        <li nz-menu-item [routerLink]="'home/welcome'">Tom</li>
+        <li nz-menu-item>Bill</li>
+        <li nz-menu-item>Alex</li>
+      </ul>
+    </li>
+    <li nz-submenu>
+      <span title><i class="anticon anticon-team"></i><span class="nav-text">Team</span></span>
+      <ul>
+        <li nz-menu-item>Team 1</li>
+        <li nz-menu-item>Team 2</li>
+      </ul>
+    </li> -->
+
+    <!-- <li nz-menu-item><span><i class="anticon anticon-file"></i><span class="nav-text">File</span></span>
+    </li> -->
+
+  <!-- </ul> -->
+
+  <!-- <ul nz-menu [nzMode]="isCollapsed?'vertical':'inline'" [nzTheme]="'light'">
+    <li nz-submenu [nzOpen]="true">
+        <span title>start</span>
+        <ul>
+          <li nz-menu-item [routerLink]="['./test']">first</li>  
+          <li nz-menu-item>second</li>  
+        </ul>
+    </li>
+  </ul> -->
+
+
+  <ul nz-menu [nzTheme]="'dark'" [nzMode]="isCollapsed?'vertical':'inline'">
     <li nz-submenu>
       <span title><i class="anticon anticon-user"></i><span class="nav-text">User</span></span>
       <ul>
@@ -34,16 +67,5 @@
         <li nz-menu-item>Team 2</li>
       </ul>
     </li>
-    <!-- <li nz-menu-item><span><i class="anticon anticon-file"></i><span class="nav-text">File</span></span>
-    </li> -->
-  </ul>
-
-  <ul nz-menu [nzMode]="isCollapsed?'vertical':'inline'" [nzTheme]="'light'">
-    <li nz-submenu [nzOpen]="true">
-        <span title>start</span>
-        <ul>
-          <li nz-menu-item [routerLink]="['./test']">first</li>  
-          <li nz-menu-item>second</li>  
-        </ul>
-    </li>
+    <li nz-menu-item><span><i class="anticon anticon-file"></i><span class="nav-text">File</span></span></li>
   </ul>
