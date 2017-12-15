@@ -1,6 +1,6 @@
 import { NgModule }             from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { WelcomeComponent } from "app/home/welcome/welcome.component";
+import { WelcomeComponent } from 'app/module/home/welcome/welcome.component';
 
 
 export const routes: Routes = [
@@ -8,10 +8,18 @@ export const routes: Routes = [
   { path: 'welcome',
     component: WelcomeComponent,
     data: { title: "欢迎" }
-  }
+  },
+
+
+//   { path: '',
+//   component: HeroComponent,
+//   children: [
+//     { path: '',    component: HeroListComponent },
+//     { path: ':id', component: HeroDetailComponent }
+//   ]
+// }
   
-//   { path: 'crisis', loadChildren: 'app/crisis/crisis.module#CrisisModule' },
-//   { path: 'heroes', loadChildren: 'app/hero/hero.module#HeroModule' }
+
 ];
 
 @NgModule({

@@ -6,7 +6,8 @@ import { MenuComponent } from "app/common/menu/menu.component";
 export const routes: Routes = [
 //   { path: '', redirectTo: 'contact', pathMatch: 'full'},
   { path: '', redirectTo: '', pathMatch: 'full'},
-  { path: 'home', loadChildren: 'app/home/home.module#HomeModule' },
+  { path: 'home', loadChildren: 'app/module/home/home.module#HomeModule' },
+  { path: 'demo', loadChildren: 'app/module/demo/demo.module#DemoModule'},
 
   { path: 'test',
   component:TestComponent ,

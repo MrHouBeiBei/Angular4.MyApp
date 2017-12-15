@@ -53,19 +53,32 @@
 
   <ul nz-menu [nzTheme]="'dark'" [nzMode]="isCollapsed?'vertical':'inline'">
     <li nz-submenu>
-      <span title><i class="anticon anticon-user"></i><span class="nav-text">User</span></span>
+      <span title><i class="anticon anticon-home"></i><span class="nav-text">home</span></span>
       <ul>
-        <li nz-menu-item>Tom</li>
-        <li nz-menu-item>Bill</li>
-        <li nz-menu-item>Alex</li>
+        <li nz-menu-item [routerLink]="'home'">welcome</li>
+        <!-- <li nz-menu-item [routerLink]="'test'">test</li>
+        <li nz-menu-item [routerLink]="'demo'">demo</li> -->
+        <!-- <li nz-menu-item>Alex</li> -->
       </ul>
     </li>
+
     <li nz-submenu>
+      <span title><i class="anticon anticon-key"></i><span class="nav-text">demo</span></span>
+      <ul>
+        <!-- <li nz-menu-item [routerLink]="'home'">welcome</li>
+        <li nz-menu-item [routerLink]="'test'">test</li>
+        <li nz-menu-item [routerLink]="'demo'">demo</li> -->
+        <!-- <li nz-menu-item>Alex</li> -->
+      </ul>
+    </li>
+
+    <li nz-menu-item [routerLink]="'test'"><span><i class="anticon anticon-flag"></i><span class="nav-text">test</span></span></li>
+
+    <!-- <li nz-submenu>
       <span title><i class="anticon anticon-team"></i><span class="nav-text">Team</span></span>
       <ul>
         <li nz-menu-item>Team 1</li>
         <li nz-menu-item>Team 2</li>
       </ul>
-    </li>
-    <li nz-menu-item><span><i class="anticon anticon-file"></i><span class="nav-text">File</span></span></li>
+    </li> -->
   </ul>
